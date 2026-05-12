@@ -9,7 +9,7 @@ spec:
   project: default
 
   source:
-    repoURL: git@github.com:vanshiz/platform-observability.git
+    repoURL: https://github.com/vanshiz/platform-observability.git
     targetRevision: main
     path: apps/observability
 
