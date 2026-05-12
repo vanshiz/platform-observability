@@ -9,9 +9,9 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/groundcover-com/caretta
-    chart: caretta
-    targetRevision: "0.0.18"
+    repoURL: https://github.com/vanshiz/platform-observability.git
+    targetRevision: main
+    path: charts/caretta/chart
 
   destination:
     server: https://kubernetes.default.svc
@@ -22,5 +22,6 @@ spec:
       prune: true
       selfHeal: true
 
-  syncOptions:
-    - CreateNamespace=true
+    syncOptions:
+      - CreateNamespace=true
+      - ServerSideApply=true
