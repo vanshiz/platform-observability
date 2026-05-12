@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+
+metadata:
+  name: caretta
+  namespace: argocd
+
+spec:
+  project: default
+
+  source:
+    repoURL: https://groundcover.github.io/caretta
+    chart: caretta
+    targetRevision: "*"
+
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: caretta
+
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
