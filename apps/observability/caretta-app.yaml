@@ -9,9 +9,9 @@ spec:
   project: default
 
   source:
-    repoURL: https://groundcover.github.io/caretta
+    repoURL: https://groundcover-com.github.io/caretta
     chart: caretta
-    targetRevision: "*"
+    targetRevision: "0.0.18"
 
   destination:
     server: https://kubernetes.default.svc
