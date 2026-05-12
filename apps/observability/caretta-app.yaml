@@ -9,7 +9,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://groundcover-com.github.io/caretta
+    repoURL: https://github.com/groundcover-com/caretta
     chart: caretta
     targetRevision: "0.0.18"
 
